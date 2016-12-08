@@ -1,0 +1,22 @@
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+=mobile($width)
+  @media screen and (max-width: $width)
+    @content
+
+=contain()
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+=span($n, $of)
+  float: left
+  width: $n / $of * 100%

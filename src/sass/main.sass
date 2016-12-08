@@ -1,0 +1,11 @@
+@import "variables"
+@import "mixins"
+
+html
+  box-sizing: border-box
+
+body
+  background-color: $primary
+  +border-radius(15px)
+  +mobile(1000px)
+    background-color: purple
